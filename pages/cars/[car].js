@@ -14,8 +14,8 @@ export const getServerSideProps = async (ctx) => {
     
     const { store, stateUpdates } = await initialDispatcher(ctx, initializeStore());
     
-    const { cars } = await readDataFile('./data/cars.json');
-    const { visitors } = await readDataFile('./data/users.json');    
+    const { cars } = await readDataFile('cars.json');
+    const { visitors } = await readDataFile('users.json');    
     const { user_cookie } = nookies.get(ctx);
 
     const user = await findUserByCookie(user_cookie, visitors, ctx, fs);

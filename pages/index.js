@@ -30,8 +30,7 @@ export const getServerSideProps = async (ctx) => {
         });
     });
     
-
-    const { visitors } = await readDataFile('./data/users.json');    
+    const { visitors } = await readDataFile('users.json');    
     const { user_cookie } = nookies.get(ctx);
 
     const user = await findUserByCookie(user_cookie, visitors, ctx, fs);

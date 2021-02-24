@@ -1,5 +1,6 @@
 import nookies from 'nookies';
 import { createUserId, updateUserVisitCounts } from '../helpers';
+const path = require('path');
 
 export const findUserByCookie = async (user_cookie, visitors, ctx, fs) => {
     let user;
@@ -15,7 +16,7 @@ export const findUserByCookie = async (user_cookie, visitors, ctx, fs) => {
             visitCounts
         };
         
-        fs.writeFile('data/users.json', JSON.stringify({visitors: [...visitors, user]}), null, 4)
+        fs.writeFile(path.resolve('users.json'), JSON.stringify({visitors: [...visitors, user]}), null, 4)
             .catch((error) => {
                 console.error(error.message);
             });
@@ -31,7 +32,7 @@ export const findUserByCookie = async (user_cookie, visitors, ctx, fs) => {
             const updatedUsers = updateUserVisitCounts(visitors, user_cookie);
             user = updatedUsers.user;
             
-            fs.writeFile('data/users.json', JSON.stringify({visitors: updatedUsers.users}), null, 4)
+            fs.writeFile(path.resolve('users.json'), JSON.stringify({visitors: updatedUsers.users}), null, 4)
                 .catch((error) => {
                     console.error(error.message);
                 });

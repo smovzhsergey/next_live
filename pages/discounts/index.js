@@ -13,7 +13,7 @@ export const getServerSideProps = async (ctx) => {
 
     const { store, stateUpdates } = await initialDispatcher(ctx, initializeStore());
 
-    const { discounts } = await readDataFile('./data/discounts.json');
+    const { discounts } = await readDataFile('discounts.json');
 
     const actualData = discounts.map(({id, content}) => ({ id, content, dateOfReceiving: new Date().toString() }));
 

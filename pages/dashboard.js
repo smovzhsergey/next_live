@@ -1,4 +1,5 @@
 const fs = require('fs').promises;
+
 import nookies from 'nookies';
 import { useSelector } from 'react-redux';
 import * as R from 'ramda';
@@ -18,10 +19,10 @@ export const getServerSideProps = async (ctx) => {
 
     const { store, stateUpdates } = await initialDispatcher(ctx, initializeStore());
     
-    const { visitors } = await readDataFile('./data/users.json'); 
-    const { news } = await readDataFile('./data/news.json');
-    const { discounts } = await readDataFile('./data/discounts.json');
-    const { cars } = await readDataFile('./data/cars.json');
+    const { visitors } = await readDataFile('users.json'); 
+    const { news } = await readDataFile('news.json');
+    const { discounts } = await readDataFile('discounts.json');
+    const { cars } = await readDataFile('cars.json');
     
     const { user_cookie } = nookies.get(ctx);
 
