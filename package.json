@@ -1,0 +1,48 @@
+{
+    "name": "smovzhsergey",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "prebuild": "rimraf .next",
+        "dev": "cross-env-shell NODE_ENV=development next dev",
+        "build": "next build",
+        "start": "next start",
+        "start:prod": "yarn build && yarn start",
+        "analyze": "cross-env-shell ANALYZE=true next build"
+    },
+    "dependencies": {
+        "@apollo/client": "^3.3.8",
+        "@apollo/react-hooks": "^4.0.0",
+        "@fullhuman/postcss-purgecss": "^4.0.0",
+        "@next/bundle-analyzer": "^10.0.7",
+        "apollo-link-logger": "^2.0.0",
+        "clean-css": "^5.0.1",
+        "cookie": "^0.4.1",
+        "cross-env": "^7.0.3",
+        "graphql": "^15.5.0",
+        "ismobilejs": "^1.1.1",
+        "isomorphic-unfetch": "^3.1.0",
+        "mobile-detect": "^1.4.4",
+        "next": "10.0.5",
+        "next-compose-plugins": "^2.2.1",
+        "node-sass": "^5.0.0",
+        "nookies": "^2.5.2",
+        "optimize-css-assets-webpack-plugin": "^5.0.4",
+        "ramda": "^0.27.1",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-redux": "^7.2.2",
+        "redux": "^4.0.5",
+        "redux-devtools-extension": "^2.13.8",
+        "redux-logger": "^3.0.6",
+        "redux-saga": "^1.1.3",
+        "rimraf": "^3.0.2",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "babel-plugin-import-graphql": "^2.8.1",
+        "core-js": "^3.8.3"
+    }
+}

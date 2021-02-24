@@ -1,0 +1,62 @@
+[
+    {
+        "logId": "j6a3f479hg507",
+        "created": "2021-02-17T20:37:06.433Z",
+        "userId": "1613578841179",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
+        "payload": {
+            "status": "OK",
+            "type": "GRAPHQL"
+        }
+    },
+    {
+        "logId": "2264eej98cj3f",
+        "created": "2021-02-24T20:31:12.538Z",
+        "userId": "1613578841179",
+        "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Mobile Safari/537.36",
+        "payload": {
+            "status": "OK",
+            "type": "GRAPHQL"
+        }
+    },
+    {
+        "logId": "9c325gf0heb9a",
+        "created": "2021-02-24T20:31:23.829Z",
+        "userId": "1613578841179",
+        "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Mobile Safari/537.36",
+        "payload": {
+            "status": "OK",
+            "type": "GRAPHQL"
+        }
+    },
+    {
+        "logId": "35295a524a0e0",
+        "created": "2021-02-24T20:33:49.412Z",
+        "userId": "1613578841179",
+        "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Mobile Safari/537.36",
+        "payload": {
+            "status": "OK",
+            "type": "GRAPHQL"
+        }
+    },
+    {
+        "logId": "2d22911e670fj",
+        "created": "2021-02-24T20:57:12.386Z",
+        "userId": "1613578841179",
+        "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Mobile Safari/537.36",
+        "payload": {
+            "status": "OK",
+            "type": "GRAPHQL"
+        }
+    },
+    {
+        "logId": "50f33dc42570d",
+        "created": "2021-02-24T20:57:18.737Z",
+        "userId": "1613578841179",
+        "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Mobile Safari/537.36",
+        "payload": {
+            "status": "OK",
+            "type": "GRAPHQL"
+        }
+    }
+]

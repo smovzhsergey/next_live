@@ -1,0 +1,6 @@
+export const types = {
+    //sync
+    FILL_CLIENT_ASTEROIDS: 'FILL_CLIENT_ASTEROIDS',
+    // async
+    LOAD_CLIENT_ASTEROIDS_ASYNC: 'LOAD_CLIENT_ASTEROIDS_ASYNC',
+}

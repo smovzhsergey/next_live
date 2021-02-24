@@ -1,0 +1,39 @@
+
+.container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.itemsWrapper {
+  margin: 0 auto;
+  width: 80%;
+  
+}
+
+.itemsTitle {
+  text-align: center;
+}
+
+.item {
+  border-radius: 5px 0 0 5px;
+  border-left: 5px solid rgb(87, 173, 223);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+.properties {
+  display: flex;
+}
+
+.itemProperty {
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.details {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
