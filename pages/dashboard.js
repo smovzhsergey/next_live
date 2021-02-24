@@ -26,7 +26,9 @@ export const getServerSideProps = async (ctx) => {
     
     const { user_cookie } = nookies.get(ctx);
 
-    const user = await findUserByCookie(user_cookie, visitors, ctx, fs);
+    // const user = await findUserByCookie(user_cookie, visitors, ctx, fs);
+    const user = { userId: '1613578841179', visitCounts: 116 }
+    
 
     const userType = detectUserType(user.visitCounts);
 

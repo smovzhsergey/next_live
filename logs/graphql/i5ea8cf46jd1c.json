@@ -1,0 +1,10 @@
+{
+    "logId": "i5ea8cf46jd1c",
+    "created": "2021-02-24T22:57:01.002Z",
+    "userId": "1613578841179",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36",
+    "payload": {
+        "status": "OK",
+        "type": "GRAPHQL"
+    }
+}
