@@ -7,7 +7,7 @@ import { carsActions } from '../../bus/car/actions';
 
 import { initializeStore } from '../../init/store';
 import { initialDispatcher } from '../../init/initialDispatcher';
-import carsData from '../cars.json'
+import carsData from '../../cars.json'
 import { readDataFile, findUserByCookie, detectUserType } from '../../helpers';
 
 export const getServerSideProps = async (ctx) => {

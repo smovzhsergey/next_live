@@ -7,7 +7,7 @@ import { discountsActions } from '../../bus/discount/actions';
 
 import { initializeStore } from '../../init/store';
 import { initialDispatcher } from '../../init/initialDispatcher';
-import discountsData from '../discounts.json'
+import discountsData from '../../discounts.json'
 import { readDataFile, findUserByCookie, detectUserType } from '../../helpers';
 
 export const getServerSideProps = async (ctx) => {

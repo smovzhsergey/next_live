@@ -6,7 +6,7 @@ import { newsActions } from '../../bus/news/actions';
 
 import { initializeStore } from '../../init/store';
 import { initialDispatcher } from '../../init/initialDispatcher';
-import newsData from '../news.json'
+import newsData from '../../news.json'
 import { readDataFile } from '../../helpers';
 
 export const getServerSideProps = async (ctx) => {
