@@ -4,6 +4,9 @@ import nookies from 'nookies';
 import { useSelector } from 'react-redux';
 import * as R from 'ramda';
 import Link from 'next/link';
+import newsData from '../news.json'
+import carsData from '../cars.json'
+import discountsData from '../discounts.json'
 
 import { initializeStore } from '../init/store';
 import { initialDispatcher } from '../init/initialDispatcher';
@@ -20,12 +23,16 @@ export const getServerSideProps = async (ctx) => {
     const { store, stateUpdates } = await initialDispatcher(ctx, initializeStore());
     
     const { visitors } = await readDataFile('users.json'); 
-    const { news } = await readDataFile('news.json');
-    const { discounts } = await readDataFile('discounts.json');
-    const { cars } = await readDataFile('cars.json');
+    // const { news } = await readDataFile('news.json');
+    // const { discounts } = await readDataFile('discounts.json');
+    // const { cars } = await readDataFile('cars.json');
+
+    const {news} = newsData;
+    const { discounts } = discountsData;
+    const { cars } = carsData;
     
     const { user_cookie } = nookies.get(ctx);
-
+    
     // const user = await findUserByCookie(user_cookie, visitors, ctx, fs);
     const user = { userId: '1613578841179', visitCounts: 116 }
     
