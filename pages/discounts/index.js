@@ -6,15 +6,15 @@ import { discountsActions } from '../../bus/discount/actions';
 
 import { initializeStore } from '../../init/store';
 import { initialDispatcher } from '../../init/initialDispatcher';
-
+import discountsData from '../discounts.json'
 import { readDataFile } from '../../helpers';
 
 export const getServerSideProps = async (ctx) => {
 
     const { store, stateUpdates } = await initialDispatcher(ctx, initializeStore());
 
-    const { discounts } = await readDataFile('discounts.json');
-
+    // const { discounts } = await readDataFile('discounts.json');
+    const { discounts } = discountsData;
     const actualData = discounts.map(({id, content}) => ({ id, content, dateOfReceiving: new Date().toString() }));
 
     store.dispatch(discountsActions.fillDiscounts(actualData));

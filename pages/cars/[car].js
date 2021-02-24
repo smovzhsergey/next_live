@@ -7,18 +7,20 @@ import { carsActions } from '../../bus/car/actions';
 
 import { initializeStore } from '../../init/store';
 import { initialDispatcher } from '../../init/initialDispatcher';
-
+import carsData from '../cars.json'
 import { readDataFile, findUserByCookie, detectUserType } from '../../helpers';
 
 export const getServerSideProps = async (ctx) => {
     
     const { store, stateUpdates } = await initialDispatcher(ctx, initializeStore());
     
-    const { cars } = await readDataFile('cars.json');
+    // const { cars } = await readDataFile('cars.json');
+    const { cars } = carsData;
     const { visitors } = await readDataFile('users.json');    
     const { user_cookie } = nookies.get(ctx);
 
-    const user = await findUserByCookie(user_cookie, visitors, ctx, fs);
+    // const user = await findUserByCookie(user_cookie, visitors, ctx, fs);
+    const user = { userId: '1613578841179', visitCounts: 116 }
     
     const userType = detectUserType(user.visitCounts);
     

@@ -6,14 +6,15 @@ import { newsActions } from '../../bus/news/actions';
 
 import { initializeStore } from '../../init/store';
 import { initialDispatcher } from '../../init/initialDispatcher';
-
+import newsData from '../news.json'
 import { readDataFile } from '../../helpers';
 
 export const getServerSideProps = async (ctx) => {
 
     const { store, stateUpdates } = await initialDispatcher(ctx, initializeStore());
 
-    const { news } = await readDataFile('news.json');
+    // const { news } = await readDataFile('news.json');
+    const {news} = newsData;
 
     const actualNews = news.map(({id, content}) => ({ id, content, dateOfReceiving: new Date().toString() }));
 
